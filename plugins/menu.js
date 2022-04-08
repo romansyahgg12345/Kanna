@@ -8,7 +8,7 @@ let { performance } = require('perf_hooks')
 let neww = Math.round(performance.now())
 let old = Math.round(performance.now())
 const chats = conn.chats.all()
-const groups = chats.filter(v => v.jid.endsWith('g.us'))
+const groups = chats.filter(v => v.jid.endsWitah('g.us'))
 const defaultMenu = {
   before: `
 ╭─────═[ *INFO PENGGUNA* ]═─────⋆
@@ -268,21 +268,31 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 │⬡ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
 ┬
 ├━━━━━━━━━━━━━━━━┈─⋆
+│ ▸ 📌*Creator/owner Bot :* Letta sama
 │ ▸ *Author :* Nurutomo
-┴ ▸ *Owner :* Letta
+┴ ▸ *Owner Bot :* Yuda
 ✧
 ┬ 📌 𝗣𝗶𝗻𝗻𝗲𝗱 :
-│ Tolong jangan dispam ya biar ga delay
+│ Tolong jangan dispam botnya yah biar gak delay :)
+│Harap tidak di spam yah bang
+┴
+✧
+┬
+│ 📌 Link Group Bot:
+https://chat.whatsapp.com/FpXjbYVaNNn0uwTM69octg
+│Ramein dengan bot bang asalkan tidak di spam
+│
+│Report Bug/lag: http://wa.me/62895416210179
 ╰━━━━━━━━━━━━━━━━┈─◂
      ▌│█║▌║▌║║▌║▌║█│▌
      
      ${week}, ${date}`,
-          "buttonText": "Click Here!",
+          "buttonText": "List Menu Disini!",
           "listType": "SINGLE_SELECT",
           "sections": [
                             {
                                 "rows": [{
-                                         "title": "[📊] Status",
+                                         "title": "[📊] Status Bot",
                                          "description": "Status Kanna Bot",
                                          "rowId": ".botstat"
                                     }, {
@@ -301,123 +311,123 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                     "title": "✧───────────────[ Stats ]───────────────✧"
                 }, {
                   "rows": [{
-                  "title": "Menu 01 |🧾|",
+                  "title": "Menu All 01 |🧾|",
                   "description": "All Commands",
                   "rowId": ".? all"
                 }, {
-                  "title": "Menu 02 |🎮|",
+                  "title": "Menu Game 02 |🎮|",
                   "description": "Game",
                   "rowId": ".? game"
                 }, {
-                  "title": "Menu 03 |🌱|",
+                  "title": "Menu Rpg 03 |🌱|",
                   "description": "RPG",
                   "rowId": ".? rpg"
                 }, {
-                  "title": "Menu 04 |✨|",
+                  "title": "Menu Exp & Limit 04 |✨|",
                   "description": "Exp & limit",
                   "rowId": ".? xp"
                 }, {
-                  "title": "Menu 05 |🧩|",
+                  "title": "Menu Fun 05 |🧩|",
                   "description": "Fun",
                   "rowId": ".? fun"
                 }, {
-                  "title": "Menu 06 |🎁|",
+                  "title": "Menu Gift 06 |🎁|",
                   "description": "Gift",
                   "rowId": ".? gift"
                 }, {
-                  "title": "Menu 07 |🔞|",
+                  "title": "Menu Nsfw 07 |🔞|",
                   "description": "Nsfw",
                   "rowId": ".? nsfw"
                 }, {
-                  "title": "Menu 08 |⛩️|",
+                  "title": "Menu Anime 08 |⛩️|",
                   "description": "Anime",
                   "rowId": ".? anime"
                 }, {
-                  "title": "Menu 09 |📰|",
+                  "title": "Menu News 09 |📰|",
                   "description": "News",
                   "rowId": ".? News"
                 },  {
-                  "title": "Menu 10 |🕋|",
+                  "title": "Menu Islami 10 |🕋|",
                   "description": "Islami",
                   "rowId": ".? quran"
                 }, {
-                  "title": "Menu 11 |🏫|",
+                  "title": "Menu Edukasi 11 |🏫|",
                   "description": "Edukasi",
                   "rowId": ".? edukasi"
                 }, {
-                  "title": "Menu 12 |🖼️|",
+                  "title": "Menu Image 12 |🖼️|",
                   "description": "Radom Image",
                   "rowId": ".? image"
                 },  {
-                  "title": "Menu 13 |🎫|",
+                  "title": "Menu Sticker 13 |🎫|",
                   "description": "Sticker",
                   "rowId": ".? stiker"
                 }, {
-                  "title": "Menu 14 |🐚|",
+                  "title": "Menu Kerang Ajaib 14 |🐚|",
                   "description": "Kerang ajaib",
                   "rowId": ".? kerangajaib"
                 }, {
-                  "title": "Menu 15 |📑|",
+                  "title": "Menu Quotes 15 |📑|",
                   "description": "Quotes",
                   "rowId": ".? quotes"
                 }, {
-                  "title": "Menu 16 |👑|",
+                  "title": "Menu Admin Group 16 |👑|",
                   "description": "Admin Group",
                   "rowId": ".? admin"
                 }, {
-                  "title": "Menu 17 |👥|",
+                  "title": "Menu Group Chat 17 |👥|",
                   "description": "Group Chat",
                   "rowId": ".? grup"
                 }, {
-                  "title": "Menu 18 |🌟|",
+                  "title": "Menu Premium 18 |🌟|",
                   "description": "Premium Users",
                   "rowId": ".? premium"
                 }, {
-                  "title": "Menu 19 |💻|",
+                  "title": "Menu Internet 19 |💻|",
                   "description": "Internet",
                   "rowId": ".? internet"
                 }, {
-                  "title": "Menu 20 |🎭|",
+                  "title": "Menu Anonymous Chat 20 |🎭|",
                   "description": "Anonymous Chat",
                   "rowId": ".? anonymous"
                 }, {
-                  "title": "Menu 21 |✍️|",
+                  "title": "Menu Nulis/buat logo 21 |✍️|",
                   "description": "Menulis & Membuat Logo",
                   "rowId": ".? nulis"
                 }, {
-                  "title": "Menu 22 |📥|",
+                  "title": "Menu Download 22 |📥|",
                   "description": "Downloader",
                   "rowId": ".? downloader"
                 }, {
-                  "title": "Menu 23 |🧰|",
+                  "title": "Menu Tools 23 |🧰|",
                   "description": "Tools",
                   "rowId": ".? tools"
                 }, {
-                  "title": "Menu 24 |📂|",
+                  "title": "Menu Database 24 |📂|",
                   "description": "Database",
                   "rowId": ".? database"
                 }, {
-                  "title": "Menu 25 |🗳️|",
+                  "title": "Menu Vote & Absen 25 |🗳️|",
                   "description": "Vote & Absen",
                   "rowId": ".? vote"
                 }, {
-                  "title": "Menu 26 |🎙️|",
+                  "title": "Menu Voice Changer 26 |🎙️|",
                   "description": "Voice Changer",
                   "rowId": ".? audio"
                 }, {
-                  "title": "Menu 27 |🤖|",
+                  "title": "Menu Jadibot 27 |🤖|",
                   "description": "Jadibot",
                   "rowId": ".? jadibot"
                 }, {
-                  "title": "Menu 28 |ℹ️|",
+                  "title": "Menu Info 28 |ℹ️|",
                   "description": "Info",
                   "rowId": ".? info"
                 }, {
-                  "title": "Menu 29 |❓|",
+                  "title": "Menu Category 29 |❓|",
                   "description": "No Category",
                   "rowId": ".? tanpakategori"
                 }, {
-                  "title": "Menu 30 | 🧑‍💻|",
+                  "title": "Menu Owner 30 | 🧑‍💻|",
                   "description": "Owner",
                   "rowId": ".? owner"
                 }],
