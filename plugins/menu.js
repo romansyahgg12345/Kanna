@@ -254,7 +254,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     if (teks == '404') {
       return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
         "listMessage": {
-          "title": `✧────────···[ Dashboard ]···─────────✧`.trim(),
+          "title": `✧─···[ 🔰Dashboard Yuda Botz]···──✧`.trim(),
           "description": `${ucapan()}, ${name} !`.trim(),
           "footerText": `╭━━━━━━━━━━━━━━━━┈─✧
 ┴
@@ -268,8 +268,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 │⬡ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
 ┬
 ├━━━━━━━━━━━━━━━━┈─⋆
-│ ▸ 📌*Creator/owner Bot :* Letta sama
-│ ▸ *Author :* Nurutomo
+│ ▸ 📌 *Creator/owner Bot :* Letta sama
+│ ▸ 📌 *Author :* Nurutomo
 ┴ ▸ *Owner Bot :* Yuda
 ✧
 ┬ 📌 𝗣𝗶𝗻𝗻𝗲𝗱 :
@@ -284,7 +284,8 @@ https://chat.whatsapp.com/FpXjbYVaNNn0uwTM69octg
 │
 │Report Bug/lag: http://wa.me/62895416210179
 ╰━━━━━━━━━━━━━━━━┈─◂
-     ▌│█║▌║▌║║▌║▌║█│▌
+     🔰Fitur Menunya Di bawah kak di gunain dengan baik yah :)
+     🔰By Owner Yuda
      
      ${week}, ${date}`,
           "buttonText": "List Menu Disini!",
@@ -292,74 +293,74 @@ https://chat.whatsapp.com/FpXjbYVaNNn0uwTM69octg
           "sections": [
                             {
                                 "rows": [{
-                                         "title": "[📊] Status Bot",
+                                         "title": "[📊] BOT STATUS",
                                          "description": "Status Kanna Bot",
                                          "rowId": ".botstat"
                                     }, {
-                                         "title": "[⚡] Speed",
+                                         "title": "[⚡] SPEED BOT",
                                          "description": "Menampilkann Kecepatan Respon Bot",
                                          "rowId": ".ping"
                                     }, {
-                                         "title": "[🗒️] Info",
+                                         "title": "[🗒️] INFO BOT",
                                          "description": "Menampilkan Info Bot",
                                          "rowId": ".info"
                                     }, {
-                                         "title": "[🎐] Creator",
+                                         "title": "[🎐] CREATOR BOT",
                                          "description": "Kontak Creator ku ^~^",
                                          "rowId": ".nowner"
                        }],
                     "title": "✧───────────────[ Stats ]───────────────✧"
                 }, {
                   "rows": [{
-                  "title": "Menu All 01 |🧾|",
+                  "title": "All COMMAND MENU 01 |🔰|",
                   "description": "All Commands",
                   "rowId": ".? all"
                 }, {
-                  "title": "Menu Game 02 |🎮|",
+                  "title": "MENU GAMES :> & FUN 02 |🎮|",
                   "description": "Game",
                   "rowId": ".? game"
                 }, {
-                  "title": "Menu Rpg 03 |🌱|",
+                  "title": "MENU RPG & GAMES |🌱|",
                   "description": "RPG",
                   "rowId": ".? rpg"
                 }, {
-                  "title": "Menu Exp & Limit 04 |✨|",
+                  "title": "MENU XP & LIMIT 04 |✨|",
                   "description": "Exp & limit",
                   "rowId": ".? xp"
                 }, {
-                  "title": "Menu Fun 05 |🧩|",
+                  "title": "MENU FUN 05 |🧩|",
                   "description": "Fun",
                   "rowId": ".? fun"
                 }, {
-                  "title": "Menu Gift 06 |🎁|",
+                  "title": "MENU GIFT 06 |🎁|",
                   "description": "Gift",
                   "rowId": ".? gift"
                 }, {
-                  "title": "Menu Nsfw 07 |🔞|",
+                  "title": "FITUR 18+ NSFW 07 |🔞|",
                   "description": "Nsfw",
                   "rowId": ".? nsfw"
                 }, {
-                  "title": "Menu Anime 08 |⛩️|",
+                  "title": "MENU ANIME 08 |⛩️|",
                   "description": "Anime",
                   "rowId": ".? anime"
                 }, {
-                  "title": "Menu News 09 |📰|",
+                  "title": "MENU NEWS 09 |📰|",
                   "description": "News",
                   "rowId": ".? News"
                 },  {
-                  "title": "Menu Islami 10 |🕋|",
+                  "title": "MENU ISLAMI 10 |🕋|",
                   "description": "Islami",
                   "rowId": ".? quran"
                 }, {
-                  "title": "Menu Edukasi 11 |🏫|",
+                  "title": "MENU EDUKASI 11 |🏫|",
                   "description": "Edukasi",
                   "rowId": ".? edukasi"
                 }, {
-                  "title": "Menu Image 12 |🖼️|",
+                  "title": "MENU IMAGE 12 |🖼️|",
                   "description": "Radom Image",
                   "rowId": ".? image"
                 },  {
-                  "title": "Menu Sticker 13 |🎫|",
+                  "title": "MENU BUAT STICKER 13 |🎫|",
                   "description": "Sticker",
                   "rowId": ".? stiker"
                 }, {
@@ -367,67 +368,67 @@ https://chat.whatsapp.com/FpXjbYVaNNn0uwTM69octg
                   "description": "Kerang ajaib",
                   "rowId": ".? kerangajaib"
                 }, {
-                  "title": "Menu Quotes 15 |📑|",
+                  "title": "MENU QUOTES  15 |📑|",
                   "description": "Quotes",
                   "rowId": ".? quotes"
                 }, {
-                  "title": "Menu Admin Group 16 |👑|",
+                  "title": "FITUR ADMIN GROUP ALL COMMAND 16 |👑|",
                   "description": "Admin Group",
                   "rowId": ".? admin"
                 }, {
-                  "title": "Menu Group Chat 17 |👥|",
+                  "title": "FITUR GROUP CHAT 17 |👥|",
                   "description": "Group Chat",
                   "rowId": ".? grup"
                 }, {
-                  "title": "Menu Premium 18 |🌟|",
+                  "title": "FITUR USER PREMIUM 18 |🌟|",
                   "description": "Premium Users",
                   "rowId": ".? premium"
                 }, {
-                  "title": "Menu Internet 19 |💻|",
+                  "title": "MENU INTERNET 19 |💻|",
                   "description": "Internet",
                   "rowId": ".? internet"
                 }, {
-                  "title": "Menu Anonymous Chat 20 |🎭|",
+                  "title": "MENU ANONYMOUS CHAT 20 |🎭|",
                   "description": "Anonymous Chat",
                   "rowId": ".? anonymous"
                 }, {
-                  "title": "Menu Nulis/buat logo 21 |✍️|",
+                  "title": "MENU NULIS & BUAT LOGO |✍️|",
                   "description": "Menulis & Membuat Logo",
                   "rowId": ".? nulis"
                 }, {
-                  "title": "Menu Download 22 |📥|",
+                  "title": "MENU DOWNLOAD(BELUM DI FIX) 22 |📥|",
                   "description": "Downloader",
                   "rowId": ".? downloader"
                 }, {
-                  "title": "Menu Tools 23 |🧰|",
+                  "title": "MENU TOOLS 23 |🧰|",
                   "description": "Tools",
                   "rowId": ".? tools"
                 }, {
-                  "title": "Menu Database 24 |📂|",
+                  "title": "MENU DATABASE BOT 24 |📂|",
                   "description": "Database",
                   "rowId": ".? database"
                 }, {
-                  "title": "Menu Vote & Absen 25 |🗳️|",
+                  "title": "MENU ABSEN & VOTE 25 |🗳️|",
                   "description": "Vote & Absen",
                   "rowId": ".? vote"
                 }, {
-                  "title": "Menu Voice Changer 26 |🎙️|",
+                  "title": "MENU VOICE CHANGER VN 26 |🎙️|",
                   "description": "Voice Changer",
                   "rowId": ".? audio"
                 }, {
-                  "title": "Menu Jadibot 27 |🤖|",
+                  "title": "FITUR JADIBOT (FREE) 27 |🤖|",
                   "description": "Jadibot",
                   "rowId": ".? jadibot"
                 }, {
-                  "title": "Menu Info 28 |ℹ️|",
+                  "title": "MENU INFO 28 |ℹ️|",
                   "description": "Info",
                   "rowId": ".? info"
                 }, {
-                  "title": "Menu Category 29 |❓|",
+                  "title": "MENU CATEGORY 29 |❓|",
                   "description": "No Category",
                   "rowId": ".? tanpakategori"
                 }, {
-                  "title": "Menu Owner 30 | 🧑‍💻|",
+                  "title": "MENU KHUSUS OWNER 30 | 🧑‍💻|",
                   "description": "Owner",
                   "rowId": ".? owner"
                 }],
