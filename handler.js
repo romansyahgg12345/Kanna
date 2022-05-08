@@ -759,7 +759,7 @@ await conn.sendMessage(jid, { "contentText": action === 'add' ? '─────
             "fileLength": "99999999999999",
             "pageCount": 100,
             "mediaKey": "XWv4hcnpGY51qEVSO9+e+q6LYqPR3DbtT4iqS9yKhkI=",
-            "fileName": 'Creαted by : ℓettα - sαmα ♡',
+            "fileName": 'Creαted by : ItzYudaKunz',
             "fileEncSha256": "NI9ykWUcXKquea4BmH7GgzhMb3pAeqqwE+MTFbH/Wk8=",
             "directPath": "/v/t62.7118-24/35150115_287008086621545_8250021012380583765_n.enc?ccb=11-4&oh=6f0f730e5224c054969c276a6276a920&oe=61A21F46",
             "mediaKeyTimestamp": "1634472176",
@@ -776,7 +776,7 @@ await conn.sendMessage(jid, { "contentText": action === 'add' ? '─────
         if (!text) text = (chat.sDemote || this.sdemote || conn.sdemote || '@user ```is no longer Admin```')
         text = text.replace('@user', '@' + participants[0].split('@')[0])
         let banp = fs.readFileSync('./src/kanna.jpg')
-        if (chat.detect) this.send2ButtonLoc(jid, banp, text, '🎮 Ƙαnnα вσт', 'MENU', '#menu', 'OWNER', '#owner', null, {
+        if (chat.detect) this.send2ButtonLoc(jid, banp, text, 'Yuda Botz', 'MENU', '#menu', 'OWNER', '#owner', null, {
           contextInfo: {
             mentionedJid: this.parseMention(text)
           }
@@ -795,7 +795,7 @@ await conn.sendMessage(jid, { "contentText": action === 'add' ? '─────
 *◇ Number*: ${require('awesome-phonenumber')(`+${m.participant.split`@`[0]}`).getNumber('international')}
 
 klick untuk mematikannya atau ketik #disable delete
-`.trim(), '🎮 Ƙαnnα вσт', 'DISABLE DELETE', '.disable delete', {
+`.trim(), 'Yuda вσт', 'DISABLE DELETE', '.disable delete', {
       quoted: m.message,
       contextInfo: {
         mentionedJid: [m.participant]
@@ -831,21 +831,21 @@ let usr = db.data.users[m.sender]
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let user = conn.getName(who)
   let msg = {
-    rowner: '[❗] Creator Only',
-    owner: '[❗] Owner Only',
-    mods: '[❗] Moderator Only',
-    premium: '[❗] Premium Only',
-    group: '[❗] Group Only',
-    private: '[❗] Private Only',
-    admin: '[❗] Admin Group Only',
-    nsfw: '[❗] Nsfw Not Active',
-    botAdmin: '[❗] Bot Admin Only'
+    rowner: '[❗] Hanya Owner',
+    owner: '[❗] Hanya Owner',
+    mods: '[❗] Hanya user moderator',
+    premium: '[❗] Hanya User Premium',
+    group: '[❗] Harus Di Grup',
+    private: '[❗] Harus Chat di Pribadi',
+    admin: '[❗] Hanya Admin',
+    nsfw: '[❗] Nsfw tidak aktif',
+    botAdmin: '[❗] Bot tidak admin :)'
     /*unreg: `*── 「 NOT REGISTERED 」 ──*
 Halo @${m.sender.split`@`[0]} !
 Yuk Daftar Dulu Karena Anda Belum Terdaftar Dalam Database Bot
     
-📍 Ketik : #daftar nama.umur
-▸ Contoh : #daftar ${user}.13`*/
+📍 Ketik : !daftar nama.umur
+▸ Contoh : !daftar ${user}.13`*/
   }[type]
   if (msg) return m.reply(msg)
   
@@ -854,8 +854,8 @@ Yuk Daftar Dulu Karena Anda Belum Terdaftar Dalam Database Bot
 Halo kak @${syappa.replace(/@.+/, '')} !
 Yuk Daftar Dulu Karena Anda Belum Terdaftar Dalam Database Bot 🗂️
     
-📍 *Ketik :* #daftar nama.umur
-⤿ *Contoh :* #daftar ${namae}.13`
+📍 *Ketik :* !daftar nama.umur
+⤿ *Contoh :* !daftar ${namae}.13`
 }[type]
   if (msgg) return conn.sendButton(m.chat, msgg, botdate + '\n' + global.wm, 'Verify', `.daftar ${namae}.18`, m, { contextInfo: { mentionedJid: [syappa] }})
 }
