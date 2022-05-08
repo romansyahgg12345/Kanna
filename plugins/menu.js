@@ -266,26 +266,20 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 │⬡ *${conn.blocklist.length}* Terblock
 │⬡ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
 │⬡ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
-┬▸ 📌 Info Creator/owner bot🔰
+┬▸ 📌 Gunakan Menu Sebaik Mungkin
 ├━━━━━━━━━━━━━━━━┈─⋆
-│ ▸ 📌 *Creator/owner Bot :* Letta sama
-│ ▸ 📌 *Author :* Nurutomo
-┴ ▸ 🔰*Owner Bot :* Yuda
+┴ ▸ 🔰 *Owner Bot :* Yuda
 ✧
-┬ 📌🔰 𝗣𝗶𝗻𝗻𝗲𝗱 :
-│ Tolong jangan dispam botnya yah biar gak delay :)
-│Harap tidak di spam yah bang bot nya entar delay atau mati
-
+┬ 🔰Info:
+│ Tolong jangan dispam botnya yah biar gak delay
+│ Dan Juga Harap tidak spam/Call
 ✧
 ┬
-│ 📌 Link Group Bot🔰:
-https://chat.whatsapp.com/FpXjbYVaNNn0uwTM69octg Bantu share bang
-│Ramein dengan bot bang asalkan tidak di spam
-│
-│Report Bug/lag: http://wa.me/62895416210179 Owner Yuda
+│ Link Group Official:
+│ https://chat.whatsapp.com/FpXjbYVaNNn0uwTM69octg
+│Lapor Bot Mati: http://wa.me/62895416210179
 ╰━━━━━━━━━━━━━━━━┈─◂
-     🔰Fitur Menunya Di bawah kak di gunain dengan baik yah :)
-     🔰By Owner Yuda
+     🔰Fitur Menunya Di bawah kak
      
      ${week}, ${date}`,
           "buttonText": "List Menu Disini!",
