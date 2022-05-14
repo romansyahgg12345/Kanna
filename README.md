@@ -1,18 +1,5 @@
 ##BRANCH INI VERSI LAMA, HARAP GUNAKAN BRACH 1.22
 
-<p align="center">
-    <img src="https://telegra.ph/file/8c0c0d33c6129af67e9c1.jpg" width="100%" style="margin-left: auto;margin-right: auto;display: block;">
-</p>
-<h1 align="center">Kanna BOT</h1>
-
-<a href="https://github.com/Kannachann/kanna-wabot/network/members"><img title="Forks" src="https://img.shields.io/github/forks/Kannachann/kanna-wabot?label=Forks&color=blue&style=flat-square"></a>
-<a href="https://github.com/Kannachann/kanna-wabot/watchers"><img title="Watchers" src="https://img.shields.io/github/watchers/Kannachann/kanna-wabot?label=Watchers&color=green&style=flat-square"></a>
-<a href="https://github.com/Kannachann/kanna-wabot/stargazers"><img title="Stars" src="https://img.shields.io/github/stars/Kannachann/kanna-wabot?label=Stars&color=yellow&style=flat-square"></a>
-<a href="https://github.com/Kannachann/kanna-wabot/graphs/contributors"><img title="Contributors" src="https://img.shields.io/github/contributors/Kannachann/kanna-wabot?label=Contributors&color=blue&style=flat-square"></a>
-<a href="https://github.com/Kannachann/kanna-wabot/issues"><img title="Issues" src="https://img.shields.io/github/issues/Kannachann/kanna-wabot?label=Issues&color=success&style=flat-square"></a>
-<a href="https://github.com/Kannachann/kanna-wabot/issues?q=is%3Aissue+is%3Aclosed"><img title="Issues" src="https://img.shields.io/github/issues-closed/Kannachann/kanna-wabot?label=Issues&color=red&style=flat-square"></a>
-<a href="https://github.com/Kannachann/kanna-wabot/pulls"><img title="Pull Request" src="https://img.shields.io/github/issues-pr/Kannachann/kanna-wabot?label=PullRequest&color=success&style=flat-square"></a>
-<a href="https://github.com/Kannachann/kanna-wabot/pulls?q=is%3Apr+is%3Aclosed"><img title="Pull Request" src="https://img.shields.io/github/issues-pr-closed/Kannachann/kanna-wabot?label=PullRequest&color=red&style=flat-square"></a>
 
 ## FOR DEPLOY HEROKU USER
 
