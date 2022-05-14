@@ -627,7 +627,7 @@ module.exports = {
           if (xp > 200) m.reply('Ngecit -_-') // Hehehe
           else m.exp += xp
           if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-            this.reply(m.chat, `✖️ Limit anda habis, silahkan beli melalui *${usedPrefix}blimit*`, m)
+            this.reply(m.chat, `✖️ Limit anda sudah habis, silahkan beli melalui *${usedPrefix}blimit*`, m)
             continue // Limit habis
           }
           if (plugin.level > _user.level) {
@@ -745,7 +745,7 @@ module.exports = {
 
               let lea = await (await fetch(fla + `GOOD BYE`)).buffer()
 
-await conn.sendMessage(jid, { "contentText": action === 'add' ? '──────────[ *WELCOME* ]──────────' : '──────────[ *GOOD BYE* ]──────────' , "footerText": text,
+await conn.sendMessage(jid, { "contentText": action === 'add' ? '[ *Selamat datang digrup Halo tuan :>* ]' : '[ *Yah kok keluar kena mental yah selamat satu beban group keluar :v* ]' , "footerText": text,
 "buttons": [
 {buttonId: '.menu', buttonText: {displayText: '⋮☰ Menu'}, type: 1},
 {buttonId: '.infogc', buttonText: {displayText: 'Info Group'}, type: 1},
@@ -759,7 +759,7 @@ await conn.sendMessage(jid, { "contentText": action === 'add' ? '─────
             "fileLength": "99999999999999",
             "pageCount": 100,
             "mediaKey": "XWv4hcnpGY51qEVSO9+e+q6LYqPR3DbtT4iqS9yKhkI=",
-            "fileName": 'Creαted by : ItzYudaKunz',
+            "fileName": 'Creαted by : YudaBotz',
             "fileEncSha256": "NI9ykWUcXKquea4BmH7GgzhMb3pAeqqwE+MTFbH/Wk8=",
             "directPath": "/v/t62.7118-24/35150115_287008086621545_8250021012380583765_n.enc?ccb=11-4&oh=6f0f730e5224c054969c276a6276a920&oe=61A21F46",
             "mediaKeyTimestamp": "1634472176",
@@ -776,7 +776,7 @@ await conn.sendMessage(jid, { "contentText": action === 'add' ? '─────
         if (!text) text = (chat.sDemote || this.sdemote || conn.sdemote || '@user ```is no longer Admin```')
         text = text.replace('@user', '@' + participants[0].split('@')[0])
         let banp = fs.readFileSync('./src/kanna.jpg')
-        if (chat.detect) this.send2ButtonLoc(jid, banp, text, 'Yuda Botz', 'MENU', '#menu', 'OWNER', '#owner', null, {
+        if (chat.detect) this.send2ButtonLoc(jid, banp, text, '🎮 Yuda вσт', 'MENU', '#menu', 'OWNER', '#owner', null, {
           contextInfo: {
             mentionedJid: this.parseMention(text)
           }
@@ -794,8 +794,8 @@ await conn.sendMessage(jid, { "contentText": action === 'add' ? '─────
 *◇ Type*: ${Object.keys(m.message.message)[0]}
 *◇ Number*: ${require('awesome-phonenumber')(`+${m.participant.split`@`[0]}`).getNumber('international')}
 
-klick untuk mematikannya atau ketik #disable delete
-`.trim(), 'Yuda вσт', 'DISABLE DELETE', '.disable delete', {
+Pencet untuk mematikannya atau ketik !disable delete
+`.trim(), '🎮 Yuda вσт', 'DISABLE DELETE', '.disable delete', {
       quoted: m.message,
       contextInfo: {
         mentionedJid: [m.participant]
@@ -816,7 +816,7 @@ klick untuk mematikannya atau ketik #disable delete
           return
         break
     }
-    await this.sendMessage(from, '[❗] karena anda menelfon bot. anda diblokir otomatis', MessageType.extendedText)
+    await this.sendMessage(from, '[❗] karena anda menelfon bot. anda diblokir otomatis!!', MessageType.extendedText)
     await this.blockUser(from, 'add')
   }
 }
@@ -831,18 +831,18 @@ let usr = db.data.users[m.sender]
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let user = conn.getName(who)
   let msg = {
-    rowner: '[❗] Hanya Owner',
-    owner: '[❗] Hanya Owner',
-    mods: '[❗] Hanya user moderator',
-    premium: '[❗] Hanya User Premium',
-    group: '[❗] Harus Di Grup',
-    private: '[❗] Harus Chat di Pribadi',
-    admin: '[❗] Hanya Admin',
-    nsfw: '[❗] Nsfw tidak aktif',
-    botAdmin: '[❗] Bot tidak admin :)'
-    /*unreg: `*── 「 NOT REGISTERED 」 ──*
+    rowner: '[❗] Hanya creator!',
+    owner: '[❗] Hanya Owner!',
+    mods: '[❗] Hanya User Moderator!',
+    premium: '[❗] Hanya User Premium!',
+    group: '[❗] Harus Di Grup!',
+    private: '[❗] Khusus Chat Pribadi!',
+    admin: '[❗] Hanya Admin!',
+    nsfw: '[❗] Nsfw bot tidak aktif!',
+    botAdmin: '[❗] Bot tidak admin grup!'
+    /*unreg: `*── 「 Kamu Belum Terdaftar 」 ──*
 Halo @${m.sender.split`@`[0]} !
-Yuk Daftar Dulu Karena Anda Belum Terdaftar Dalam Database Bot
+Daftar Dulu Karena Anda Belum Terdaftar Dalam Database Bot
     
 📍 Ketik : !daftar nama.umur
 ▸ Contoh : !daftar ${user}.13`*/
@@ -850,9 +850,9 @@ Yuk Daftar Dulu Karena Anda Belum Terdaftar Dalam Database Bot
   if (msg) return m.reply(msg)
   
   let msgg = {
-  unreg: `*── 「 NOT REGISTERED 」 ──*
+  unreg: `*── 「 Kamu Belum Terdaftar 」 ──*
 Halo kak @${syappa.replace(/@.+/, '')} !
-Yuk Daftar Dulu Karena Anda Belum Terdaftar Dalam Database Bot 🗂️
+Daftar Dulu Karena Anda Belum Terdaftar Dalam Database Bot 🗂️
     
 📍 *Ketik :* !daftar nama.umur
 ⤿ *Contoh :* !daftar ${namae}.13`
