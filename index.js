@@ -1,18 +1,18 @@
-console.log('🕔 Starting...')
+console.log('🕔 Berhasil Selamat Menggunakan Bot...')
 let { spawn } = require('child_process')
 let path = require('path')
 let fs = require('fs')
 let package = require('./package.json')
 const CFonts  = require('cfonts')
-CFonts.say('Rpg\nWhatsApp Bot', {
+CFonts.say('XyudaMd Bot', {
   font: 'chrome',
   align: 'center',
-  gradient: ['red', 'magenta']
+  gradient: ['green', 'blue']
 })
-CFonts.say(`'${package.name}' By @${package.author.name || package.author}\nKannabot ver 1.5.0\nRecode By LettaChn`, {
+CFonts.say(`'${package.name}' By @${package.author.name || package.author}\nKannabot ver 1.5.0\nRecode By YudaKunz`, {
   font: 'console',
   align: 'center',
-  gradient: ['red', 'magenta']
+  gradient: ['green', 'blue']
 })
 
 var isRunning = false
@@ -27,13 +27,13 @@ function start(file) {
   CFonts.say([process.argv[0], ...args].join(' '), {
     font: 'console',
     align: 'center',
-    gradient: ['red', 'magenta']
+    gradient: ['red', 'blue']
   })
   let p = spawn(process.argv[0], args, {
     stdio: ['inherit', 'inherit', 'inherit', 'ipc']
   })
   p.on('message', data => {
-    console.log('[✅ RECEIVED]', data)
+    console.log('[✅ Berhasil Tersambung]', data)
     switch (data) {
       case 'reset':
         p.kill()
@@ -47,7 +47,7 @@ function start(file) {
   })
   p.on('exit', code => {
     isRunning = false
-    console.error('[❗] Exited with code:', code)
+    console.error('[❗] Erorr!:', code)
     if (code === 0) return
     fs.watchFile(args[0], () => {
       fs.unwatchFile(args[0])
